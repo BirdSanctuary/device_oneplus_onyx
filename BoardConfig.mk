@@ -20,8 +20,6 @@
 
 PLATFORM_PATH := device/oneplus/onyx
 
-TARGET_BOARD_PROVIDES_LIBRIL := true
-
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
@@ -163,7 +161,8 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 
 # RIL
-TARGET_RIL_VARIANT := caf
+BOARD_PROVIDES_LIBRIL := true
+BOARD_PROVIDES_RILD := true
 
 # RPC
 TARGET_NO_RPC := true
