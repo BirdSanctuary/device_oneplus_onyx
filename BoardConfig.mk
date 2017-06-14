@@ -20,6 +20,8 @@
 
 PLATFORM_PATH := device/oneplus/onyx
 
+TARGET_BOARD_PROVIDES_LIBRIL := true
+
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
