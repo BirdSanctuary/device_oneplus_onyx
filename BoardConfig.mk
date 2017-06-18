@@ -63,6 +63,9 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 # Add QC Video Enhancements flag
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
+# Fixes Wifi-Mobile Data toggle issue
+MALLOC_SVELTE := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
